@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-int a[2][2],transpose[2][2];
+int a[2][2],trans[2][2];
 int i,j;
 for(i=0;i<2;i++)
 {
@@ -15,7 +15,7 @@ for(i=0;i<2;i++)
 {
 for (j=0;j<2;j++)
 {
-transpose[i][j]=a[j][i];
+trans[i][j]=a[j][i];
 }
 }
 printf("transpose");
@@ -23,7 +23,7 @@ for(i=0;i<2;i++)
 {
 for (j=0;j<2;j++)
 {
-printf("\t%d",transpose[i][j]);
+printf("\t%d",trans[i][j]);
 }
 }
 
