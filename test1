@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+int a[2][2],transpose[2][2];
+int i,j;
+for(i=0;i<2;i++)
+{
+for (j=0;j<2;j++)
+{
+printf("enter element at a%d%d:",i,j);
+scanf("%d",&a[i][j]);
+}
+}
+for(i=0;i<2;i++)
+{
+for (j=0;j<2;j++)
+{
+transpose[i][j]=a[j][i];
+}
+}
+printf("transpose");
+for(i=0;i<2;i++)
+{
+for (j=0;j<2;j++)
+{
+printf("\t%d",transpose[i][j]);
+}
+}
+
+}
